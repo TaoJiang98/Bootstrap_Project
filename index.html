@@ -90,10 +90,10 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-                <div class="col-12 col-md-3 col-sm-12 align-self-center">
+                <div class="col-12 col-md-3 col-sm-12 align-self-center" id="reserveClass">
                     <!-- <a role="button" class="btn btn-block nav-link btn-warning"
                         data-toggle="modal" data-target="#reserveModal">Reserve Table</a> -->
-                        <a role="button" class="btn btn-block nav-link btn-warning">Reserve Table</a>
+                        <a role="button" class="btn btn-block nav-link btn-warning" id="reserveButton">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -289,6 +289,11 @@
                 }
             });
         });
+        $(document).ready(function() {
+            $("reserveButton").click(function() {
+
+            })
+        })
     </script>
 </body>
 
