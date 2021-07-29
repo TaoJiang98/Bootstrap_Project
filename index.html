@@ -29,7 +29,7 @@
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
-                <span class="navbar-text">
+                <span class="navbar-text" id="loginForm">
                     <!-- <a data-toggle="modal" data-target="#loginModal">
                         <span class="fa fa-sign-in"></span>
                         Login
@@ -289,10 +289,14 @@
                 }
             });
         });
+        // week 4
+        // using jquery to add data-* attribute
         $(document).ready(function() {
-            $("reserveButton").click(function() {
+            $("#reserveClass").children("a").attr("data-toggle", "modal");
+            $("#reserveClass").children("a").attr("data-target", "#reserveModal");
 
-            })
+            $("#loginForm").children("a").attr("data-toggle", "modal");
+            $("#loginForm").children("a").attr("data-target", "#loginModal");
         })
     </script>
 </body>
